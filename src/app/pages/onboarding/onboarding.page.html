@@ -1,0 +1,220 @@
+<!-- -->
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  .header-header {
+    color: white;
+    padding-right: 450px;
+    height: 30px;
+    align-items: center;
+    justify-content: right;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    color: rgb(255, 0, 0);
+    margin-top: 50px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  li {
+    padding: 2px 10px;
+    display: inline-block;
+    /* visual do link */
+    background-color: #EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 3px solid #EDEDED;
+    list-style-type: none;
+
+  }
+.header-header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(50%) translateY(50%);
+}
+li{
+  display: inline-block;
+}
+li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: source sans pro;
+  font-weight: lighter;
+  font-size: 28px;
+  padding: 0 20px;
+}
+.cool-link::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background:#fff;
+  transition: width .3s;
+}
+.cool-link:hover::after{
+  background:#fff;
+  transition: width .3s;
+}
+   
+</style>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<ion-header class="header-header">
+  <div [routerLink]="['/login']">
+    <ion-icon name="person"></ion-icon>
+    <ion-label class="label-header">Login</ion-label>
+  </div>
+  |
+  <div style="padding-left: 25px;" [routerLink]="['/signup']">
+    <ion-icon name="pencil"></ion-icon>
+    <ion-label>Cadastro</ion-label>
+  </div>
+
+
+</ion-header>
+
+<ion-header class="header">
+
+  <ion-img [routerLink]="['/onboarding']" style="max-width: 10%;"
+    src="../../../assets/images-coopeere/coopere.png"></ion-img>
+
+  <ion-button fill="clear" style="color: #000000; font-weight: bold; font-size: 15px; "
+    [routerLink]="['/onboarding']">Home</ion-button>
+
+  <div class="dropdown">
+    <a [routerLink]="['/onboarding']" style="color: #000000; font-weight: bold; font-size: 15px; ">A
+      COOPEERE</a>
+    <div class="dropdown-content">
+      <a [routerLink]="['/quemsomos']" class="dropdown-item">Quem Somos?</a>
+      <a [routerLink]="['/objetivos']" class="dropdown-item">Objetivo</a>
+      <a [routerLink]="['/equipe']" class="dropdown-item">A Equipe</a>
+    </div>
+  </div>
+  <ion-button fill="clear" style="color: #000000; font-weight: bold; font-size: 15px;"
+    [routerLink]="['/legislacao']">Legislação</ion-button>
+  <ion-button fill="clear" style="color: #000000;font-weight: bold; font-size: 15px; "
+    [routerLink]="['/estatuto']">Estatuto</ion-button>
+  <ion-button fill="clear" style="color: #000000; font-weight: bold; font-size: 15px; "
+    [routerLink]="['/vantagens']">Vantagens</ion-button>
+  <ion-button fill="clear" style="color: #000000;font-weight: bold; font-size: 15px; "
+    [routerLink]="['/parceiros']">Parceiros</ion-button>
+  <ion-button fill="clear" style="color: #000000;font-weight: bold; font-size: 15px;"
+    [routerLink]="['/faleconosco']">Fale Conosco</ion-button>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+  </div>
+
+  <ion-slides pager="true" [options]="slideOpts">
+    <div class="intro-text">
+      <ion-slide>
+        <img src="../../../assets/images-coopeere/coopeereslide2.png">
+
+        <h1 class="text-slider-c">Coopere você também, torne-se um cooperado</h1>
+        <button [routerLink]="['/signup']">Cadastre-Se</button>
+      </ion-slide>
+    </div>
+
+    <ion-slide>
+      <img src="../../../assets/images-coopeere/coopeereslide1.png">
+      <h1>O que a sociedade espera dos nossos goverantes?</h1>
+      <button [routerLink]="['/signup']">Cadastre-Se</button>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../../assets/images-coopeere/coopeereslide2.png">
+      <h1>O que nossos jovens esperam do futuro?</h1>
+      <button [routerLink]="['/signup']">Cadastre-Se</button>
+    </ion-slide>
+
+
+
+
+    <ion-slide>
+      <img style="width: 200%;" src="../../../assets/images-coopeere/coopeere-offshore.jpg">
+
+      <h1>Quantos milhares de empregos poderão ser criados?</h1>
+      <button [routerLink]="['/signup']">Cadastre-Se</button>
+    </ion-slide>
+
+
+
+
+
+  </ion-slides>
+
+  <div class="laranja">
+    <h1 style="text-align:start; padding: 10px;">Apoio:</h1>
+    <ion-slides style="height: 100px; max-width: 50  0px; background-color: #d9e1d6;" [options]="slideOpts2">
+
+      <ion-slide>
+        <img style="min-width: 50%" src="../../../assets/img/cooopeerre.png">
+      </ion-slide>
+
+      <ion-slide>
+        <img style="min-width: 50%" src="../../../assets/img/fitmmrj.png">
+      </ion-slide>
+
+      <ion-slide>
+        <img style="min-width: 50%" src="../../../assets/img/wipdev.jpg">
+      </ion-slide>
+
+      <ion-slide>
+        <img style="min-width: 50%" src="../../../assets/img/primesol.jpg">
+      </ion-slide>
+
+      <ion-slide>
+        <img style="min-width: 50%" src="../../../assets/img/redeaurora.jpeg">
+      </ion-slide>
+
+      <ion-slide>
+        <img style="min-width: 50%" src="../../../assets/img/fotonsolucoes.png">
+      </ion-slide>
+
+      <ion-slide>
+        <img style="min-width: 50%" src="../../../assets/img/forcasindical.png">
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+</ion-content>
+<!---->
+<ion-footer class="footer">
+
+  <div class="menu-footer">
+    <ion-label [routerLink]="['/eventos']">Eventos</ion-label>
+    <ion-label [routerLink]="['/eventos']">Eventos</ion-label>
+    <ion-label [routerLink]="['/publicacoes']">Publicações</ion-label>
+    <ion-label [routerLink]="['/agenda']">Agenda</ion-label>
+    <ion-label [routerLink]="['/galeria']">Galeria de Fotos</ion-label>
+    <ion-label [routerLink]="['/faleconosco']">Fale Conosco</ion-label>
+  </div>
+
+  <div class="social-media-icons">
+
+    <!-- ROUTER LINKS NÃO FUNCIONAM COM LINKS DE VERDADE  -->
+
+    <!-- MAS DEU PRA RESOLVER USANDO UMA FUNÇÃO COM TYPESCRIPT -->
+    <ion-label (click)="openExternalLinkFacebook()"> <strong>Facebook</strong> </ion-label>
+    <ion-label (click)="openExternalLinkInstagram()"> <strong>Instagram</strong> </ion-label>
+    <ion-label (click)="openExternalLinkYouTube()"> <strong>Youtube</strong> </ion-label>
+
+  </div>
+</ion-footer>

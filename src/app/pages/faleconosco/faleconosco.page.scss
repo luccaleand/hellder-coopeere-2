@@ -1,0 +1,147 @@
+h3,
+h2,
+p,
+li,
+ul {
+    color: black;
+    font-style: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h1 {
+    color: #020101BA;
+    font-size: 30px;
+    font-weight: 300px;
+    font-family: "Open Sans", Sans-serif;
+}
+
+/*   
+.label-header {
+    padding-right: 10px;
+    padding-left: 40px;
+}
+ NÃO MAIS NECESSARIO POR CAUSA DO 
+     justify-content: center
+*/
+ion-header {
+    display: block;
+    -ms-flex-order: 0;
+    order: 0;
+    width: 100%;
+    z-index: 0;
+
+}
+
+.header-header {
+//border: burlywood 5px solid;
+    background-color: #2b571a;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.header {
+//border: darkblue 5px solid;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 45px 0px 0px 400px;
+    background-color: white;
+    word-spacing: 100px;
+}
+
+ion-content {
+//border: orchid 50px solid;
+    --ion-background-color: white;
+    display: flex;
+}
+
+.text-container p {
+//border: blue 5px solid;
+    line-height: 5.0;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8em;
+
+}
+
+.text-container {
+//border: purple 5px solid;
+    width: 50%;
+    float: left; 
+    padding-top: 100px;
+    padding-left: 400px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+
+.aside{
+//border: red 1px solid;
+    margin-top: 70px;
+    //margin-left: 1px;
+    width: 50%; 
+    float: right;
+    padding:0;
+}
+.aside li {
+//border: #750000 1px solid;
+    margin-left: 100px;
+    font-size: 100%;
+    list-style: none;
+    color: black;
+}
+
+.lista-dropdown {
+    border-radius: 20px;
+    padding-right: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+ion-button:hover {
+    border-bottom: solid 5px green;
+    color: #2b571a;
+}
+
+/*
+
+
+*/  
