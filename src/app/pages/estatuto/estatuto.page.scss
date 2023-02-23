@@ -1,5 +1,313 @@
+.pdf-estatuto {
+    margin-left: 1;
+    margin-top: 10%;
+    min-width: 60%;
+    min-height: 100%;
+   border: red 1px solid;
+   frameborder:"0";
+}
 
-//css novo
+ion-content {
+    --ion-background-color: white;
+    display: flex;
+    flex: 200px;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+ul {
+    color: black;
+}
+
+.header-header {
+
+    //flex-direction: row;
+    //align-items: center;
+
+
+    background-color: #2b571a;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ion-header {
+
+    display: block;
+    -ms-flex-order: 0;
+    order: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.header {
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 45px 0px 0px 0px;
+    background-color: white;
+}
+
+h1 {
+    color: #020101BA;
+    font-size: 37px;
+    font-weight: 300
+}
+
+/*
+.text-container {
+    display: flex;
+    width: 50%;
+    padding-left: 100px;
+    margin-top: 20px;
+    border: red 10px solid;
+    justify-content: space-around;
+}
+
+.text-container p {
+    border: rgb(59, 59, 228) 3px solid;
+
+    line-height: 2.0;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+*/
+.aside li {
+    list-style: none;
+    color: black;
+}
+
+.lista-dropdown {
+    border-radius: 20px;
+    padding-right: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+
+.aside {
+    //border: saddlebrown 3px solid;
+    position: fixed;
+    top: 150px;
+    left: 60%;
+    width: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+ion-button:hover {
+    border-bottom: solid 5px transparent;
+}
+
+ion-row {
+    padding-top: 50px;
+
+    ion-row:hover {
+        border-bottom: solid 5px #7B9A6E;
+        color: #7B9A6E;
+    }
+}
+
+.label-header {
+    //border: purple 30px solid;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.header {
+    //border: yellow 3px solid;
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+
+}
+
+.text-container p {
+    //border: red 30px solid;
+
+    line-height: 2.0;
+}
+
+.text-container {
+    margin-top: 0px;
+    //border: blue 3px solid;
+    display: inline-block;
+    width: 50%;
+    padding-left: 300px;
+    padding-right: 100px;
+}
+
+
+.aside li {
+    list-style: none;
+    color: black;
+}
+
+.lista-dropdown {
+    border-radius: 20px;
+    padding-right: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin: 20px;
+    display: inline-block;
+}
+
+ion-button,
+a {
+
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    position: relative;
+    color: #333;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 500;
+    padding: 40px 5px;
+    border-bottom: 5px solid transparent;
+    height: 112px;
+    transition: .4s;
+
+    &:hover {
+        color: #7B9A6E;
+
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        width: 0;
+        right: 0;
+        height: 5px;
+        background: #7B9A6E;
+        transition: width .2s;
+
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+.active-link:before {
+
+    width: 100%;
+    color: #7B9A6E;
+
+}
+
+.search {
+    font-size: 25px;
+    color: #2B571A;
+    cursor: pointer;
+
+}
+
+.arrowicon {
+    position: relative;
+    top: 5px;
+}
+
+/* css antigo lucca
 .input-labels {
     padding: 10px;
 }
