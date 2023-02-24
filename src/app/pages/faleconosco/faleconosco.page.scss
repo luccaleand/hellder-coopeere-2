@@ -240,14 +240,81 @@ ion-button:hover {
     }
 }
 */
+/*
+.aside {
+    border: red 5px solid;
+}
+
+.text-container {
+    border: purple 5px solid;
+}
+
+.aside li {
+    border: #750000 5px solid;
+}
+
+.header-header {
+    border: burlywood 5px solid;
+}
+
+.header {
+    border: darkblue 5px solid;
+}
+
+ion-content {
+    border: orchid 5px solid;
+}
+
+.text-container {
+    border: brown 10px solid;
+}
+
+.text-container {
+    border: purple 5px solid;
+}
+*/
+ion-header {
+    display: flex;
+    -ms-flex-order: 0;
+    order: 0;
+    width: 100%;
+    z-index: 0;
+    align-self: center;
+    padding-left: 5px;
+
+}
+
+.header-header {
+    //border: burlywood 5px solid;
+    background-color: #2b571a;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 390px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+    color: #FFFFFF;
+    align-self: center;
+    padding-left: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
 .header {
     //border: darkblue 5px solid;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
-    padding: 45px 0px 0px 400px;
     background-color: white;
-    word-spacing: 1px;
+
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 9px 0px 0px 0px;
+    z-index: 10;
 
 
     &::after {
@@ -294,12 +361,12 @@ ion-button:hover {
         color: #2b571a;
     }
 
-    
+
 
 
     ion-button,
     a {
-        
+
         cursor: pointer;
         display: block;
         margin: 0;
@@ -356,14 +423,7 @@ ion-button:hover {
     }
 }
 
-ion-header {
-    display: absolute;
-    -ms-flex-order: 0;
-    order: 0;
-    width: 100%;
-    z-index: 0;
 
-}
 
 
 h3,
@@ -400,16 +460,6 @@ h1 {
 
 
 
-.header-header {
-    //border: burlywood 5px solid;
-    background-color: #2b571a;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 400px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-}
 
 ion-content {
     //border: orchid 5px solid;
@@ -417,13 +467,15 @@ ion-content {
     display: flex;
 }
 
-.text-container p {
-    //border: blue 10px solid;
+.text-container {
+    //border: brown 10px solid;
     line-height: 5.0;
     font-family: "Open Sans", Sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.8em;
+    
+    font-weight: 300;
 
 }
 
@@ -437,29 +489,30 @@ ion-content {
     margin-top: 0px;
 }
 
+
 .aside {
     //border: red 5px solid;
-    margin-top: 70px;
+    margin-top: 0px;
     //margin-right: 1px;
     width: 50%;
     float: right;
-    padding: 0;
-    padding: 13px 20px;
+    //padding-top: 100px;
+    margin-top: 100px;
+    //padding: 13px 20px;
 
 }
 
 .aside li {
-    border: #750000 5px solid;
-    margin-top: 10px;
+    //border: #750000 5px solid;
+    margin-top: 1px;
     margin-left: 200px;
     font-size: 100%;
     list-style: none;
     color: black;
     margin-right: 500px;
-    display: inline-block;
 
 
-    a{
+    a {
         text-decoration: none;
         margin: 0;
         padding: 0;
@@ -467,7 +520,8 @@ ion-content {
         display: inline-block;
     }
 
-    ion-button, a {
+    ion-button,
+    a {
 
         cursor: pointer;
         display: block;
@@ -478,45 +532,48 @@ ion-content {
         font-size: 14px;
         font-family: "Open Sans", Sans-serif;
         font-weight: 500;
-        padding: 40px 5px;  
+        padding: 40px 5px 40px 5px;
         border-bottom: 5px solid transparent;
         height: 112px;
         transition: .4s;
 
         &:hover {
             color: #7B9A6E;
-            
+
         }
 
         &::before {
             content: '';
             position: absolute;
-            bottom: 0px;
-            width: 0;
-            right: 0;
+            bottom: 30px;
+            width: 0px;
+            right: 0px;
             height: 5px;
             background: #7B9A6E;
             transition: width .2s;
 
         }
+
         &:hover::before {
             width: 100%;
         }
     }
 
     .active-link:before {
-        
+
         width: 100%;
         color: #7B9A6E;
 
     }
-    .search{
+
+    .search {
         font-size: 25px;
         color: #2B571A;
         cursor: pointer;
 
     }
-    .arrowicon{
+
+    .arrowicon {
         position: relative;
         top: 5px;
     }

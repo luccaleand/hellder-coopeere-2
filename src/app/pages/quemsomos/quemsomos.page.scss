@@ -1,14 +1,23 @@
 .header {
-    border: darkblue 5px solid;
+    //border: darkblue 5px solid;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
-    padding: 45px 0px 0px 400px;
     background-color: white;
-    word-spacing: 1px;
 
-    
-}
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 9px 0px 0px 0px;
+    z-index: 10;
+
+
+    &::after {
+        display: none;
+    }}
 
 .dropdown {}
 
@@ -50,7 +59,7 @@ ion-button {
 
 ion-button,
 a {
-    border: 5px solid pink;
+   // border: 5px solid pink;
     display: block;
     margin: 0;
     position: relative;
@@ -74,12 +83,12 @@ a {
     &::before {
         content: '';
         position: absolute;
-        top: 60px;
+        top:30px;
         width: 0;
         right: 0;
         bottom: 0;
         height: 5px;
-        background: #2B571A;
+        background: #7B9A6E;
         transition: width .2s;
 
     }
@@ -158,7 +167,7 @@ h1 {
 
 
 .header-header {
-    border: burlywood 5px solid;
+  //  border: burlywood 5px solid;
     background-color: #2b571a;
     display: flex;
     justify-content: flex-end;
@@ -169,7 +178,7 @@ h1 {
 }
 
 ion-content {
-    border: orchid 5px solid;
+  //  border: orchid 5px solid;
     --ion-background-color: white;
     display: flex;
 }
@@ -185,8 +194,8 @@ ion-content {
 }
 
 .text-container {
-    border: purple 5px solid;
-    width: 50%;
+    //border: purple 5px solid;
+    width: 65%;
     float: left;
     padding-top: 80px;
     padding-left: 350px;
@@ -195,21 +204,19 @@ ion-content {
 }
 
 .aside {
-    border: red 5px solid;
+    //border: red 5px solid;
     margin-top: 70px;
     //margin-right: 1px;
-    width: 50%;
+    width: 35%;
     float: right;
     padding: 0;
-    padding: 13px 20px;
     
 }
 
 .aside li {
-    border: #750000 5px solid;
+    //border: #750000 5px solid;
     margin-top: 10px;
-    margin-left: 200px;
-    font-size: 100%;
+    margin-left: 20px;
     list-style: none;
     color: black;
     margin-right: 500px;

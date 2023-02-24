@@ -1,213 +1,262 @@
-ion-content {
-    --ion-background-color: white;
-    display: flex;
-    flex: 200px;
-}
 
 .header {
-    padding: 18px;
+    //border: darkblue 5px solid;
     display: flex;
-    flex-direction:row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
     background-color: white;
 
-}
-.carousel {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 9px 0px 0px 0px;
+    z-index: 10;
+
+
+    &::after {
+        display: none;
+    }}
+
+.dropdown {}
+
+.dropdown-content {
+    min-width: 133px;
+
 }
 
-.slide {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slide:first-child {
+.dropdown-item {
     display: block;
-}
+    height: 50px;
+    padding: 20px;
+    transition: .4s;
 
-
-ion-slide {
-   position: relative;
-}
-
-ion-slide h1, ion-slide p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: flex-start;
-    font-size: 80px;
-    width: 50%;
-}
-
-ion-slide button {
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 30px;
-    width: 250px;
-    margin-top: 200px;
-    padding: 15px;
-    border-radius: 50px;
-    background-color: green;
-}
-
-
-.container {
-    background-image: url("https://media.gazetadopovo.com.br/2019/06/08112107/energia-eolica-660x372.jpg");
-    background-size: cover;
-}
-.header-header {
-    align-items: flex-end;
-    justify-content: flex-end;
-    display: flex;
-    flex-direction: row;
-    padding-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: green;
-}
-
-.label-header {
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-
-
-.lista-dropdown{
-    border-radius: 20px;
-    padding-right: 10px;
-}
-
-.welcome {
-    padding-top: 30px;
-    font-size: 35px;
-    font-weight: bold;
-    
-}
-
-.welcome-div {
-    padding-top: 30px ;
-}
-
-.logo {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  
-    margin: auto;
-}
-
-.container-form {
-    
-    max-width: 500px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding: 10px;
-    margin: auto;
-    flex-direction: column;
-    border-radius: 20px;
-
-}
-
-ion-input {
-
-    
-    border-radius: 10px;
-    min-width: 300px;
-    max-width: 400px;
-}
-
-.inputs {
-    padding: 10px;
-}
-
-.input-labels {
-    padding: 10px;
-}
-
-.input-label-text {
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.menu-footer {
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: flex-start;   
-    margin: auto;
-}
-
-.social-media-icons{
-    gap: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer {
-   align-items: flex-end;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
-    padding-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: green;
-}
-
-.select-text {
-    &:hover {
-      opacity: 0.75;
-      cursor: pointer;
+    &::before {
+        content: none;
     }
-  }
 
-  .dropdown {
+    &:hover {
+        color: white;
+        background-color: #7B9A6E;
+        border: none;
+    }
+}
+
+.arrowicon {}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin: 20px;
+    display: inline-block;
+}
+
+ion-button {
+    cursor: pointer;
+}
+
+ion-button,
+a {
+   // border: 5px solid pink;
+    display: block;
+    margin: 0;
+    position: relative;
+    color: #2a302f;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 00;
+    padding: 0px 5px 0px 5px;
+    //padding-bottom: 35px;
+    //height: 65px;
+    transition: .4s;
+
+   
+    &:hover {
+        color: #7B9A6E;
+
+
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top:30px;
+        width: 0;
+        right: 0;
+        bottom: 0;
+        height: 5px;
+        background: #7B9A6E;
+        transition: width .2s;
+
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+.active-link:before {
+
+    width: 100%;
+    color: #7B9A6E;
+
+}
+
+
+ion-header {
+    display: absolute;
+    -ms-flex-order: 0;
+    order: 0;
+    width: 100%;
+    z-index: 0;
+
+}
+
+
+h3{
+    color: black;
+    font-style: none;
+}
+
+h2{
+    color: black;
+    font-style: none;
+}
+
+p{
+    color: black;
+    font-style: none;
+}
+
+li{
+    color: black;
+    font-style: none;
+}
+
+ul {
+    color: black;
+    font-style: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h1 {
+    color: #020101BA;
+    font-size: 30px;
+    font-weight: 300px;
+    font-family: "Open Sans", Sans-serif;
+}
+
+
+//.label-header {
+//    padding-right: 10px;
+//    padding-left: 40px;
+//}
+// NÃO MAIS NECESSARIO POR CAUSA DO 
+//     justify-content: center
+
+
+
+.header-header {
+  //  border: burlywood 5px solid;
+    background-color: #2b571a;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+ion-content {
+  //  border: orchid 5px solid;
+    --ion-background-color: white;
+    display: flex;
+}
+
+.text-container p {
+    //border: blue 10px solid;
+    line-height: 5.0;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8em;
+
+}
+
+.text-container {
+    //border: purple 5px solid;
+    width: 65%;
+    float: left;
+    padding-top: 80px;
+    padding-left: 350px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+
+.aside {
+    //border: red 5px solid;
+    margin-top: 70px;
+    //margin-right: 1px;
+    width: 35%;
+    float: right;
+    padding: 0;
+    
+}
+
+.aside li {
+    //border: #750000 5px solid;
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style: none;
+    color: black;
+    margin-right: 500px;
+    display: inline-block;
+    text-transform: uppercase;
+
+    
+}
+
+.lista-dropdown {
+    border-radius: 20px;
+    padding-right: 10px;
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
+}
 
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
+}
 
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
-  .dropdown-item {
+.dropdown-item {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     color: black;
-  }
+}
 
-  .dropdown-item:hover {
+.dropdown-item:hover {
     background-color: #f1f1f1;
-  }
+}
