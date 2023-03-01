@@ -1,3 +1,10 @@
+ion-grid {
+    --ion-background-color: white;
+}
+
+ion-row {
+    --ion-background-color: white;
+}
 
 .header {
     //border: darkblue 5px solid;
@@ -18,7 +25,8 @@
 
     &::after {
         display: none;
-    }}
+    }
+}
 
 .dropdown {}
 
@@ -60,7 +68,7 @@ ion-button {
 
 ion-button,
 a {
-   // border: 5px solid pink;
+    // border: 5px solid pink;
     display: block;
     margin: 0;
     position: relative;
@@ -74,7 +82,7 @@ a {
     //height: 65px;
     transition: .4s;
 
-   
+
     &:hover {
         color: #7B9A6E;
 
@@ -84,7 +92,7 @@ a {
     &::before {
         content: '';
         position: absolute;
-        top:30px;
+        top: 30px;
         width: 0;
         right: 0;
         bottom: 0;
@@ -117,22 +125,22 @@ ion-header {
 }
 
 
-h3{
+h3 {
     color: black;
     font-style: none;
 }
 
-h2{
+h2 {
     color: black;
     font-style: none;
 }
 
-p{
+p {
     color: black;
     font-style: none;
 }
 
-li{
+li {
     color: black;
     font-style: none;
 }
@@ -168,7 +176,7 @@ h1 {
 
 
 .header-header {
-  //  border: burlywood 5px solid;
+    //  border: burlywood 5px solid;
     background-color: #2b571a;
     display: flex;
     justify-content: flex-end;
@@ -179,7 +187,7 @@ h1 {
 }
 
 ion-content {
-  //  border: orchid 5px solid;
+    //  border: orchid 5px solid;
     --ion-background-color: white;
     display: flex;
 }
@@ -195,7 +203,7 @@ ion-content {
 }
 
 .text-container {
-    //border: purple 5px solid;
+    border: purple 5px solid;
     width: 65%;
     float: left;
     padding-top: 80px;
@@ -204,14 +212,27 @@ ion-content {
     margin-top: 0px;
 }
 
+.text-container2 {
+    border: peachpuff 5px solid;
+    width: 65%;
+    float: left;
+    padding-top: 80px;
+    padding-left: 350px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+
+ion-col {
+    border: purple 5px solid;
+}
+
 .aside {
-    //border: red 5px solid;
-    margin-top: 70px;
+    border: red 5px solid;
+    margin-bottom: 7px;
     //margin-right: 1px;
     width: 35%;
     float: right;
-    padding: 0;
-    
+
 }
 
 .aside li {
@@ -224,7 +245,7 @@ ion-content {
     display: inline-block;
     text-transform: uppercase;
 
-    
+
 }
 
 .lista-dropdown {
